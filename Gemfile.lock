@@ -1,33 +1,34 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    benchmark-ips (2.7.2)
-    benchmark-memory (0.1.2)
-      memory_profiler (~> 0.9)
-    creek (2.5.0)
+    benchmark-ips (2.10.0)
+    benchmark-memory (0.2.0)
+      memory_profiler (~> 1)
+    creek (2.5.3)
       nokogiri (>= 1.10.0)
       rubyzip (>= 1.0.0)
-    memory_profiler (0.9.14)
-    mini_portile2 (2.4.0)
-    nokogiri (1.10.8)
-      mini_portile2 (~> 2.4.0)
-    ox (2.13.2)
-    roo (2.8.3)
+    memory_profiler (1.0.0)
+    nokogiri (1.13.8-arm64-darwin)
+      racc (~> 1.4)
+    racc (1.6.0)
+    roo (2.9.0)
       nokogiri (~> 1)
       rubyzip (>= 1.3.0, < 3.0.0)
-    rubyXL (3.4.12)
-      nokogiri (>= 1.4.4)
+    rubyXL (3.4.25)
+      nokogiri (>= 1.10.8)
       rubyzip (>= 1.3.0)
-    rubyzip (2.2.0)
-    simple_xlsx_reader (1.0.4)
+    rubyzip (2.3.2)
+    simple_xlsx_reader (2.0.0)
       nokogiri
       rubyzip
-    xsv (0.3.7)
-      ox (~> 2.13)
-      rubyzip (~> 2.2)
+    terminal-table (3.0.2)
+      unicode-display_width (>= 1.1.1, < 3)
+    unicode-display_width (2.2.0)
+    xsv (1.1.1)
+      rubyzip (>= 1.3, < 3)
 
 PLATFORMS
-  ruby
+  arm64-darwin-21
 
 DEPENDENCIES
   benchmark-ips
@@ -36,7 +37,8 @@ DEPENDENCIES
   roo
   rubyXL
   simple_xlsx_reader
+  terminal-table
   xsv
 
 BUNDLED WITH
-   2.1.4
+   2.3.8

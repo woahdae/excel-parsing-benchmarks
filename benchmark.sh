@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
 
-declare -a gems=("rubyxl" "simple_xlsx_reader" "creek" "roo" "xsv")
-declare -a benchmarks=("time" "memory")
+declare -a gems=("_headers" "simple_xlsx_reader" "rubyxl" "creek" "roo" "xsv" "_report")
 
 for gem in "${gems[@]}"; do
-  for benchmark in "${benchmarks[@]}"; do
-    bundle exec ruby benchmark.rb $benchmark $gem
-  done
+  bundle exec ruby benchmark.rb $gem
 done
